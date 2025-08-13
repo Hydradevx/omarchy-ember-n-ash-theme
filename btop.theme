@@ -1,0 +1,60 @@
+# Ember n Ash Theme for Btop
+# Muted charcoal base with warm ember highlights and soft smoky gradients
+
+theme[main_bg]="#1b1a17"       # Deep ash charcoal
+theme[main_fg]="#f2e3d5"       # Warm pale ash
+
+theme[title]="#ff6f3c"         # Ember orange
+theme[hi_fg]="#ffe5d4"         # Soft warm light
+theme[selected_bg]="#2b1b18"   # Burnt ash brown
+theme[selected_fg]="#ff915e"   # Glowing ember
+theme[inactive_fg]="#4a3b36"   # Smoky brown
+
+theme[proc_misc]="#f2e3d5"     # Neutral ash
+
+theme[cpu_box]="#ff6f3c"       # Ember orange
+theme[mem_box]="#d45d2f"       # Burnt ember
+theme[net_box]="#ff915e"       # Soft glowing orange
+theme[proc_box]="#c44428"      # Deep ember red
+
+theme[div_line]="#4a3b36"      # Smoky divider
+
+theme[graph_text]="#ffb68f"    # Soft ember light
+
+# CPU gradients - from deep ember (low) to glowing orange to warm gold (high)
+theme[cpu_start]="#6e2f1a"
+theme[cpu_mid]="#ff6f3c"
+theme[cpu_end]="#ffb347"
+
+# Memory gradients - from muted clay to warm ember
+theme[mem_start]="#8c4a2f"
+theme[mem_mid]="#d45d2f"
+theme[mem_end]="#ff915e"
+
+# Network gradients - from ember orange to golden brown
+theme[download_start]="#ff915e"
+theme[download_mid]="#ffb347"
+theme[download_end]="#cc7a33"
+
+theme[upload_start]="#ff6f3c"
+theme[upload_mid]="#ff915e"
+theme[upload_end]="#ffb68f"
+
+# Process gradients - burnt ember to glowing orange
+theme[process_start]="#6e2f1a"
+theme[process_mid]="#c44428"
+theme[process_end]="#ff6f3c"
+
+# Temperature gradients - ember red to molten orange
+theme[temp_start]="#8b2e1f"
+theme[temp_mid]="#d6452a"
+theme[temp_end]="#ff6f3c"
+
+# Battery gradient - warm gold tones
+theme[battery_start]="#cc7a33"
+theme[battery_mid]="#ffb347"
+theme[battery_end]="#ffd580"
+
+theme[clock]="#ffe5d4"         # Warm pale glow
+theme[input_text]="#ffffff"    # White for clarity
+theme[error_text]="#ff3b1f"    # Warning ember red

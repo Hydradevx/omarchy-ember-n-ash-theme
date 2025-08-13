@@ -1,0 +1,93 @@
+@define-color foreground #D8C9B6;  /* Soft ash white */
+@define-color background #1A1513;  /* Deep charcoal brown */
+@define-color primary #E07A5F;     /* Warm ember orange */
+@define-color secondary #B85746;   /* Smoked brick red */
+@define-color success #A3A36F;     /* Muted moss green */
+@define-color danger #D1495B;      /* Burnt ember red */
+@define-color warning #E6B566;     /* Golden ash */
+@define-color info #C97C5D;        /* Faded copper */
+@define-color light #F4EDE4;       /* Pale ash white */
+@define-color dark #120E0C;        /* Charred black */
+@define-color muted #3A2F2B;       /* Smoky brown-gray */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(26, 21, 19, 0.9);
+    color: @foreground;
+    border-bottom: 2px solid @primary;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: @muted;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.active {
+    background: rgba(224, 122, 95, 0.1);
+    color: @primary;
+    border-bottom: 3px solid @primary;
+}
+
+#workspaces button:hover {
+    background: rgba(184, 87, 70, 0.15);
+    color: @secondary;
+}
+
+#cpu, #memory, #temperature, #network, #pulseaudio, #battery, #clock {
+    padding: 0 10px;
+    color: @foreground;
+}
+
+#cpu {
+    color: @secondary;
+}
+
+#memory {
+    color: @warning;
+}
+
+#temperature {
+    color: @danger;
+}
+
+#temperature.critical {
+    background: @danger;
+    color: @background;
+}
+
+#network {
+    color: @info;
+}
+
+#pulseaudio {
+    color: @primary;
+}
+
+#battery {
+    color: @success;
+}
+
+#battery.critical:not(.charging) {
+    background: @danger;
+    color: @background;
+    animation: blink 0.5s linear infinite alternate;
+}
+
+#clock {
+    color: @light;
+    font-weight: bold;
+}
+
+@keyframes blink {
+    to {
+        background-color: @background;
+        color: @danger;
+    }
+}

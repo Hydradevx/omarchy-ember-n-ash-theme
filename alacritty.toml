@@ -1,0 +1,42 @@
+[colors.primary]
+background = "#1a1a1a" # Deep ash charcoal
+foreground = "#e5d6c6" # Warm light beige
+
+[colors.cursor]
+text = "#1a1a1a"
+cursor = "#ff884d" # Soft ember orange
+
+[colors.normal]
+black   = "#1a1a1a"
+red     = "#d45d4c" # Smoldering coal red
+green   = "#9e8f70" # Muted moss green
+yellow  = "#d9a066" # Ashy gold
+blue    = "#6c5b4c" # Smoky brown-blue
+magenta = "#b57276" # Faded ember pink
+cyan    = "#a98274" # Warm dusty clay
+white   = "#d1c0b0" # Pale ash white
+
+[colors.bright]
+black   = "#2a2a2a"
+red     = "#e87461"
+green   = "#b39c7c"
+yellow  = "#e3b97f"
+blue    = "#7f6b5d"
+magenta = "#c6898c"
+cyan    = "#ba9486"
+white   = "#f2e6d8"
+
+[colors.selection]
+text       = "#1a1a1a"
+background = "#ffbb99" # Soft glowing ember
+
+[colors.search.matches]
+foreground = "#1a1a1a"
+background = "#ff884d"
+
+[colors.search.focused_match]
+foreground = "#1a1a1a"
+background = "#ffb366"
+
+[window]
+opacity = 0.94

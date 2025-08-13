@@ -1,0 +1,72 @@
+@define-color selected-text #E07A5F;  /* Warm ember orange */
+@define-color text #D8C9B6;           /* Soft ash white */
+@define-color base #1A1513;           /* Deep charcoal brown */
+@define-color surface #120E0C;        /* Charred black */
+@define-color overlay #3A2F2B;        /* Smoky brown-gray */
+@define-color muted #A37F74;          /* Faded ember rose */
+@define-color subtle #B85746;         /* Smoked brick red */
+@define-color border #E07A5F;         /* Warm ember orange */
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+#window {
+    background: rgba(26, 21, 19, 0.95);
+    border: 2px solid @border;
+    border-radius: 10px;
+}
+
+#box {
+    padding: 20px;
+}
+
+#search {
+    background: @surface;
+    border: 2px solid @border;
+    border-radius: 5px;
+    padding: 10px;
+    color: @text;
+    font-size: 14px;
+}
+
+#search:focus {
+    border-color: @selected-text;
+    box-shadow: 0 0 10px rgba(224, 122, 95, 0.5);
+}
+
+#list {
+    margin-top: 10px;
+}
+
+#entry {
+    padding: 10px;
+    margin: 5px 0;
+    background: @surface;
+    border-radius: 5px;
+    color: @text;
+}
+
+#entry:hover {
+    background: @overlay;
+    border-left: 3px solid @subtle;
+}
+
+#entry:selected {
+    background: linear-gradient(90deg, rgba(224, 122, 95, 0.15), rgba(184, 87, 70, 0.15));
+    border-left: 3px solid @selected-text;
+    color: @selected-text;
+}
+
+#entry #icon {
+    margin-right: 10px;
+}
+
+#entry #name {
+    font-weight: bold;
+}
+
+#entry #description {
+    color: @muted;
+    font-size: 12px;
+}
